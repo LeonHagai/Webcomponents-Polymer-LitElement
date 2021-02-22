@@ -39,7 +39,7 @@ class MyView2 extends LitElement {
 
         section {
           width: 100%;
-          height: 95vh;
+          height: 60vh;
           background-image: url("UI/img/010.jpg");
           background-repeat: no-repeat;
           background-size: cover;
@@ -55,6 +55,7 @@ class MyView2 extends LitElement {
           font-weight: bold;
           color: #2d2a2a;
         }
+
 
         .text-container p:nth-child(1){
           font-family: calibri;
@@ -84,10 +85,18 @@ class MyView2 extends LitElement {
         }
 
         .text-container{
-          position: absolute;
-          left: 13%;
-          top: 42%;
-          transform: translate(-13%, -42%);
+          justify-content: center;
+          margin-top: 100px;
+          margin-left: 10px;
+          display: flex;
+        }
+        .bg-img {
+          width: 50%;
+          height: wrap;     
+          margin-left: 100px;
+          margin-top: 60px;
+          cursor: pointer;
+          box-shadow: 5px 10px #888888
         }
 
         .text-container button{
@@ -105,11 +114,20 @@ class MyView2 extends LitElement {
           border: 2px solid #373636;
           color: #373636;
         }
+        .hire-btn:hover {
+          background-color: #000000;
+          border: #000000; 
+          color: #FFFFFF;
+        }
 
         .down-cv {
           background-color: #0b0b0b;
           color: #FFFFFF;
           border: none;
+        }
+        .down-cv:hover {
+          background-color: #f6f5f5;
+          color: #000000;
         }
 
         button:active{
@@ -214,6 +232,7 @@ class MyView2 extends LitElement {
         }
 
         .box-1, .box-2, .box-3{
+          opacity: 0.5;
           width: 300px;
           height: 320px;
           background-repeat: no-repeat;
@@ -223,6 +242,10 @@ class MyView2 extends LitElement {
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          cursor: pointer;
+        }
+        .box-1:hover, .box-2:hover, .box-3:hover{
+          opacity: 1.0;
         }
 
         .box-container{
@@ -230,17 +253,20 @@ class MyView2 extends LitElement {
         }
 
         .box-1 {
-          background-image: url("UI/img/003.jpg");
+          background-image: url("images/img7.jpg");
+          margin-top: 5px;
           margin-right: 30px;
         }
         
         .box-2 {
-          background-image: url("UI/img/004.jpg");
+          background-image: url("images/img8.jpg");
+          margin-top: 5px;
           margin-right: 30px;
         }
         
         .box-3 {
-          background-image: url("UI/img/005.jpg");
+          background-image: url("images/img2.jpg");
+          margin-top: 5px;
         }
 
         .box-1 span,
@@ -289,8 +315,8 @@ class MyView2 extends LitElement {
 
         .contact-me {
           width: 100%;
-          height: 280px;
-          background-image: url("images/ic_adventure2.jpg");
+          height: 350px;
+          background-image: url("images/img6.jpg");
           background-size: cover;
           background-repeat: no-repeat;
           display: flex;
@@ -418,7 +444,7 @@ class MyView2 extends LitElement {
       </style>
 
       <section>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- text -->
         <div class="text-container">
           <div>
@@ -427,6 +453,9 @@ class MyView2 extends LitElement {
             <p>Am a software developer <br>& designer</p>
             <button class="hire-btn"> Hire Me </button>
             <button class="down-cv"> Download CV </button>
+          </div>
+          <div class="bg-img">
+            <img src="images/nike2.png"/>
           </div>
         </div>
         <!-- endtext -->
@@ -491,7 +520,7 @@ class MyView2 extends LitElement {
         <div class="social-icons">
           <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
           <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-          <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+          <a href="https://instagram.com/leon_hagai"><i class="fa fa-instagram"></i></a>
           <a href="https://youtube.com"><i class="fa fa-youtube"></i></a>
         </div>
         <p class="copyright">Copyright by hagai-otieno</p>
@@ -499,7 +528,7 @@ class MyView2 extends LitElement {
       <div class="a-social-icons">
         <a href="https://linkedin.com"><i class="fa fa-linkedin"></i></a>
         <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com/leonhagai"><i class="fa fa-instagram"></i></a>
+        <a href="https://instagram.com/leon_hagai"><i class="fa fa-instagram"></i></a>
         <a href="https://youtube.com"><i class="fa fa-youtube"></i></a>
       </div>
     `;
